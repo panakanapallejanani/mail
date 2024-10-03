@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Link Example</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .phone-link {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>
+<body>
+
+    <h1>Compose an Email</h1>
+    
+    <!-- Link that opens the email client -->
+    <a href="mailto:john.doe@example.com?subject=Hello&body=This%20is%20a%20test%20email">Compose Mail</a>
+    
+    <!-- Button that opens the email client -->
+    <br><br>
+    <button onclick="window.location.href='mailto:john.doe@example.com?subject=Hello&body=This%20is%20a%20test%20email'">
+        Compose Mail
+    </button>
+    <h2>Contact Us</h2>
+    
+    <!-- Link that opens the phone dial pad -->
+    <p>
+        Call us at: <a href="tel:+12345678900" class="phone-link">+1 234 567 8900</a>
+    </p>
+
+</body>
+</html>
